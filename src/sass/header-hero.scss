@@ -1,0 +1,260 @@
+.link {
+  text-decoration: 0;
+}
+
+/* body {
+  margin: 0 auto;
+} */
+ul {
+  list-style-type: none;
+}
+.container {
+  /* position: relative;
+  z-index: -1; */
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .container {
+    width: 1260px;
+    margin: 0 auto;
+  }
+}
+
+.hero {
+  position: relative;
+  padding: 52px 16px;
+  font-family: 'Titan One';
+  background-color: #ffb8ca;
+  /* z-index: 0; */
+  height: 100vh;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    padding: 8px 20px 0 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 32px 32px 0 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 40px 16px 0 16px;
+  }
+}
+
+.hero__logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+  margin-right: auto;
+}
+/* @media screen and (min-width: 1280px) {
+  .hero__logo {
+    padding-left: 248px;
+    width: 335px;
+    height: 333px;
+  } */
+.hero__logo-img {
+  margin-right: 16px;
+}
+
+.hero__title {
+  position: relative;
+  z-index: 2;
+  font-family: 'Titan One';
+  font-size: 48px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+  margin: 136px auto 20px 0;
+  text-align: left;
+}
+.hero__title--white {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero__circle {
+  z-index: 1;
+  position: absolute;
+  top: 83px;
+  left: 36px;
+  background-color: #ffa5ba;
+  width: 346px;
+  height: 344px;
+  border-radius: 50%;
+  /* margin-left: 16px; */
+}
+@media screen and (min-width: 768px) {
+  .hero__circle {
+    /* padding-left: 248px; */
+    width: 335px;
+    height: 333px;
+    top: 54px;
+    left: 248px;
+  }
+
+  @media screen and (min-width: 1260px) {
+    .hero__circle {
+      /* padding-left: 248px; */
+      width: 534px;
+      height: 534px;
+      top: 43px;
+      left: 517px;
+    }
+  }
+}
+
+.hero__links {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+
+.hero__link {
+  border-radius: 20px;
+  font-size: 8px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  background-color: #d41443;
+  padding: 6px 10px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  vertical-align: center;
+}
+
+.hero__link:first-child {
+  margin-right: 8px;
+}
+
+.hero__link--accent {
+  color: #d41443;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .hero__image-milk {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__image-milk {
+    position: absolute;
+    bottom: 16px;
+    left: 32px;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .hero__image-milk {
+    position: absolute;
+    bottom: 60px;
+    left: 16px;
+  }
+}
+
+.hero-chain {
+}
+@media screen and (max-width: 767px) {
+  .hero-chain {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-chain {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 32px;
+    top: 62px;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .hero-chain {
+    position: absolute;
+    display: flex;
+    right: 16px;
+    top: 153px;
+  }
+}
+
+.hero-chain__item {
+}
+.hero-chain__text {
+  position: relative;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
+  font-weight: 400;
+  color: #ffffff;
+  font-family: 'DM Sans';
+}
+
+.hero-chain__text--accent {
+  font-family: 'Titan One';
+  position: relative;
+  z-index: 1;
+  font-size: 28px;
+  line-height: 1.14;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+.hero-chain__text--accent::after {
+  display: inline-block;
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  z-index: -1;
+  content: '';
+  height: 16px;
+  width: 16px;
+  border-radius: 16px;
+  background-color: white;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
